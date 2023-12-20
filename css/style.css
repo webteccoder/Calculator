@@ -1,0 +1,73 @@
+.zigzag-text-bg-1{
+    background-image: url('../image/bg-1.jpg');
+}
+
+.zigzag-text-bg-2{
+    background-image: url('../image/bg-2.jpg');
+    background-size: cover;
+}
+.section-padding.zigzag-text-bg-1 {
+    background-size: cover;
+    background-position: center;
+}
+.zigzag-text{
+    position:relative;
+    z-index:1;
+    padding-right: 50px;
+    padding-top:120px;
+    padding-bottom:120px;
+}
+.zigzag-text::after{
+    position: absolute;
+    left:-4900%;
+    top:0;
+    height:100%;
+    width:5000%;
+    background: aqua;
+    z-index:-1;
+    content: "";
+    transform: skew(10deg);
+    opacity: 0.4;
+}
+a.boxed-btn{
+    color: brown;
+    background: chartreuse;
+    display: inline-block;
+    padding:10px 20px;
+    text-decoration:none;
+    transition:1s ease;
+   
+}
+a.boxed-btn:hover{
+    background: crimson;
+    color:#fff;
+}
+
+
+.section-padding.zigzag-text-bg-2 {
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.zigzag-text-bg-2 .zigzag-text::after{
+    position: absolute;
+    right:-4900%;
+    left:0;
+    height:100%;
+    width:5000%;
+    background: aqua;
+    z-index:-1;
+    content: "";
+    transform: skew(10deg);
+    opacity: 0.4;
+}
+
+.zigzag-text-bg-2 .zigzag-text{
+    padding-left: 50px;
+    padding-top:120px;
+    padding-bottom:120px;
+    transform: skew(10deg);
+    margin-top:5px;
+}
